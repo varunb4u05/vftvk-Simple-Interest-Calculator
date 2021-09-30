@@ -17,10 +17,10 @@ function compute()
     //Convert year to YYYY formt
     var year = new Date().getFullYear() + parseInt(years);
     // Printing calculated interest in page as per valid selection
-	document.getElementById("result").innerText = "If you deposit "+principal+
-	" ,<br> \n at an interest rate of "+rate+
-	" .<br> \n You will receive an amount of "+interest+
-	",<br> \n in the year "+year;
+	document.getElementById("result").innerHTML = "If you deposit <strong> "+principal+
+	" </strong>,<br> at an interest rate of <strong> "+rate+
+	" </strong>.<br> You will receive an amount of <strong> "+interest+
+	" </strong>,<br> in the year <strong> "+year+" </strong>";
 }
 
 function updateRate() 
